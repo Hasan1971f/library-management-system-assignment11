@@ -110,7 +110,7 @@ const BorrowedBooks = () => {
                                 <p>Return Date : {borrowedBook.returnDate}</p>
                             </div>
                             <div className='flex justify-center mt-4'>
-                                <button onClick={() => handleReturn(borrowedBook._id, borrowedBook.bookId)} className='btn border-none bg-green-600 hover:bg-[#286ed6] hover:border-none scale-95 duration-300 hover:scale-90 sm:text-base hover:text-white shadow-md'>Reurn Book</button>
+                                <button onClick={() => handleReturn(borrowedBook._id, borrowedBook.bookId)} className='btn border-none bg-green-600 hover:bg-[#286ed6] hover:border-none scale-95 duration-300 hover:scale-90 sm:text-base hover:text-white shadow-md'>Return Book</button>
                             </div>
                         </div>
                     </div>)
