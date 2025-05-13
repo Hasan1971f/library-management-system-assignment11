@@ -3,7 +3,7 @@ import {  useLoaderData, useNavigate } from 'react-router-dom';
 import { IoMdStarOutline } from 'react-icons/io';
 import ReactStars from "react-rating-stars-component";
 import { AuthContext } from '../Provider/AuthProvider';
-import { toast } from 'react-toastify';
+
 import Swal from 'sweetalert2';
 
 const DetailsBook = () => {
