@@ -67,7 +67,7 @@ const BorrowedBooks = () => {
                         if (data.message) {
                             Swal.fire('Returned!', 'The book has been returned.', 'success');
                         }
-                        // const bookIds = bookId;
+                       
                         fetch(`http://localhost:5000/books/${bookId}`, {
                             method: "PATCH",
                             headers: {
