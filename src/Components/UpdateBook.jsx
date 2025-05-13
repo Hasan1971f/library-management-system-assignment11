@@ -58,19 +58,19 @@ const UpdateBook = () => {
             <form onSubmit={handleUpdateBook} className='flex flex-col justify-center'>
             
             <div className='grid grid-cols-1 md:grid-cols-2 gap-5 justify-center' >
-                    {/* Book Name */}
+                    
                     <div className='w-full'>
                         <p>Book Name</p>
                         <input type="text" name='name' defaultValue={book.name} placeholder="Enter Book Name" className="input input-bordered w-full  bg-[#5f9ff3] hover:bg-[#ffedd8] duration-300" required />
                     </div>
 
-                    {/* Book Image */}
+                    
                     <div>
                         <p>Book Image link</p> 
                         <input type="text" name='image' defaultValue={book.image} placeholder="Enter Book Image Link" className="input input-bordered w-full  bg-[#5f9ff3] hover:bg-[#ffedd8] duration-300" required />
                     </div>
 
-                    {/* Book Category */}
+                  
                     <div>
                         <p>Book Category</p>
                         <select name="category" defaultValue={book.category} id="" className=" border-2 p-3 rounded-lg input-bordered w-full  cursor-pointer bg-[#5f9ff3] hover:bg-[#ffedd8] duration-300"  required >
@@ -83,31 +83,31 @@ const UpdateBook = () => {
                         </select>
                     </div>
 
-                    {/* Author Name */}
+                   
                     <div>
                         <p>Author Name</p>
                         <input type="text" name='author-name' defaultValue={book.author} placeholder="Enter Author Name" className="input input-bordered w-full  bg-[#5f9ff3] hover:bg-[#ffedd8] duration-300" required />
                     </div>
 
-                    {/* Quantity */}
+                  
                     <div>
                         <p>Book Quantity</p>
                         <input type="number" name='quantity' defaultValue={book.quantity} placeholder="Enter Book quantity" className="input input-bordered w-full  bg-[#5f9ff3] hover:bg-[#ffedd8] duration-300"  required />
                     </div>
 
-                    {/* Rating */}
+                  
                     <div>
                         <p>Book Rating</p>
                         <input type="number" name='rating' defaultValue={book.rating} placeholder="Enter Book quantity" className="input input-bordered w-full  bg-[#5f9ff3] hover:bg-[#ffedd8] duration-300" min={1} max={5} required />
                     </div>
 
-                    {/*  Short Description */}
+                    
                     <div>
                         <p>Short Description</p>
                         <input type="text" name='description' defaultValue={book.description} placeholder="Enter Short Description" className="input input-bordered w-full  bg-[#5f9ff3] hover:bg-[#ffedd8] duration-300" required />
                     </div>
 
-                    {/*  Book Content  */}
+                    
                     <div>
                         <p>Book Content </p>
                         <input type="text" name='book-content' defaultValue={book.bookContent} placeholder="Enter Book Content" className="input input-bordered w-full  bg-[#5f9ff3] hover:bg-[#ffedd8] duration-300" required />
@@ -115,7 +115,7 @@ const UpdateBook = () => {
 
             </div>
 
-                {/* submit */}
+              
                 <div className='mt-5 flex justify-center'>
                     <button  className='btn py-3 px-5 bg-[#5f9ff3] w-40 hover:bg-[#3b67df] hover:scale-110 rounded-xl border-none hover:text-white duration-300 hover:shadow-md hover:shadow-lime-50 text-base'>Submit </button>
                 </div>
