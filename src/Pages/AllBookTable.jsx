@@ -13,7 +13,7 @@ const AllBookTable = () => {
 
         <div className="overflow-x-auto">
           <table className="table">
-            {/* head */}
+            
             <thead>
               <tr>
                 <th>Book Name & Category</th>
@@ -26,7 +26,7 @@ const AllBookTable = () => {
             {
                 books.map(book => 
                     <tbody>
-              {/* row 1 */}
+              
               <tr>
                 <td>
                   <div className="flex items-center gap-3">
