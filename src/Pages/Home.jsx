@@ -3,6 +3,8 @@ import Banner from '../Components/Banner';
 import AvialableHotBooks from '../Components/AvialableHotBooks';
 import BookCategories from '../Components/BookCategories';
 import BorrowingTipsFAQ from '../Components/BorrowingTipsFAQ';
+import WhyChoseUs from '../Components/WhyChoseUs';
+
 
 const Home = () => {
     return (
@@ -15,6 +17,10 @@ const Home = () => {
             <div className='w-[40%] mx-auto'>
                 <AvialableHotBooks></AvialableHotBooks>
             </div>
+            <div>
+                <WhyChoseUs></WhyChoseUs>
+            </div>
+            
         </div>
 
     );

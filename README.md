@@ -1,12 +1,67 @@
-# React + Vite
+# 📚 Library Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A complete web application for managing library books, user authentication, and book borrowing/returning.  
+Built with modern technologies to provide a smooth and secure experience for both admins and users.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Website
 
-## Expanding the ESLint configuration
+Frontend URL: [https://library-management-syste-f478f.web.app]
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🎯 Purpose of the Project
+
+The goal of this project is to create a responsive and user-friendly system where:
+
+- Admins can manage books (add, update, delete)
+- Book quantity is managed automatically
+- Users can log in and borrow/return books
+- Authentication and route protection are securely handled using JWT and cookies
+
+---
+
+## ✨ Key Features
+
+- Secure user authentication (JWT + Cookies)
+- Add, update, and delete books
+- Browse books by category
+- Borrow a book (reduces quantity)
+- Return a book (increases quantity)
+- Route protection and email validation
+- Display of latest books
+- MongoDB used as a cloud-hosted database
+
+---
+
+## 🧰 NPM Packages Used
+
+### 🔹 Frontend
+
+- `react-router-dom`
+- `firebase`
+- `axios`
+- `tailwindcss`
+- `daisyui`
+- `lottie-react`
+- `react-rating-stars-component`
+- `react-responsive-carousel`
+- `react-slick`
+- `react-spinners`
+- `react-toastify`
+- `slick-carousel`
+- `sweetalert2`
+
+### 🔹 Backend
+
+- `express`
+- `mongodb`
+- `jsonwebtoken` (JWT authentication)
+- `cookie-parser`
+- `cors`
+- `dotenv`
+
+---
+
+

@@ -17,14 +17,14 @@ const BorrowedBooks = () => {
 
     useEffect(() => {
 
-        // fetch(`http://localhost:5000/bookBorrowed?email=${user.email}`)
+        // fetch(`https://assignment11-library-management-server.vercel.app/bookBorrowed?email=${user.email}`)
         // .then(res => res.json())
         // .then(data => {
         //     console.log(data)
         //     setBorrowedBooks(data)
         // })
 
-        // axios.get(`http://localhost:5000/bookBorrowed?email=${user.email}`, {withCredentials: true})
+        // axios.get(`https://assignment11-library-management-server.vercel.app/bookBorrowed?email=${user.email}`, {withCredentials: true})
         // .then(res => {
         //     // console.log(res.data)
         //     setBorrowedBooks(res.data)
@@ -59,7 +59,7 @@ const BorrowedBooks = () => {
             confirmButtonText: "Yes, Return it!"
         }).then(result => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/bookBorrowed/${borrowBoookId}`, {
+                fetch(`https://assignment11-library-management-server.vercel.app/bookBorrowed/${borrowBoookId}`, {
                     method: "DELETE"
                 })
                     .then(res => res.json())
@@ -68,7 +68,7 @@ const BorrowedBooks = () => {
                             Swal.fire('Returned!', 'The book has been returned.', 'success');
                         }
                        
-                        fetch(`http://localhost:5000/books/${bookId}`, {
+                        fetch(`https://assignment11-library-management-server.vercel.app/books/${bookId}`, {
                             method: "PATCH",
                             headers: {
                                 "content-type": "application/json"

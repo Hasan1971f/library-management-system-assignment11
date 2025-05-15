@@ -14,7 +14,7 @@ const CategoryBooks = () => {
 
     useEffect(() => {
 
-        fetch(`http://localhost:5000/books?category=${name}`)
+        fetch(`https://assignment11-library-management-server.vercel.app/books?category=${name}`)
             .then(res => res.json())
             .then(data => {
                 setBooks(data)

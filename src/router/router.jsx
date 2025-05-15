@@ -27,7 +27,7 @@ const router = createBrowserRouter([
             {
                 path: '/all-book',
                 element: <PrivetRoute><ToggleForAllBooks></ToggleForAllBooks></PrivetRoute>,
-                loader: () => fetch('http://localhost:5000/books')
+                loader: () => fetch('https://assignment11-library-management-server.vercel.app/books')
 
             },
             {
@@ -41,17 +41,17 @@ const router = createBrowserRouter([
             {
                 path: '/updatebook/:id',
                 element: <UpdateBook></UpdateBook>,
-                loader: ({ params }) => fetch(`http://localhost:5000/books/${params.id}`)
+                loader: ({ params }) => fetch(`https://assignment11-library-management-server.vercel.app/books/${params.id}`)
             },
             {
                 path: '/details/:id',
                 element: <PrivetRoute><DetailsBook></DetailsBook></PrivetRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/books/${params.id}`)
+                loader: ({ params }) => fetch(`https://assignment11-library-management-server.vercel.app/books/${params.id}`)
             },
             {
                 path: '/category/:name',
                 element: <PrivetRoute><CategoryBooks></CategoryBooks></PrivetRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/books?category=${params.name}`)
+                loader: ({ params }) => fetch(`https://assignment11-library-management-server.vercel.app/books?category=${params.name}`)
             },
             {
                 path: '/register',

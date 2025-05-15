@@ -28,7 +28,7 @@ const UpdateBook = () => {
         const updatedBook ={ name, image, category, quantity, rating, author, description, bookContent, bookAdderName, bookAdderEmail}
         // console.log(updatedBook)
 
-        fetch(`http://localhost:5000/books/${book._id}`, {
+        fetch(`https://assignment11-library-management-server.vercel.app/books/${book._id}`, {
             method:"PUT",
             headers:{
                 "content-type":"application/json"

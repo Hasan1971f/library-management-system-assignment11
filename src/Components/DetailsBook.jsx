@@ -37,7 +37,7 @@ const DetailsBook = () => {
         const borrowBookDetails = { userName, userEmail, returnDate, bookId, bookName, borrowDate, userPic, bookImage, bookCategory };
         console.log(borrowBookDetails)
 
-        fetch(`http://localhost:5000/borrow/${book._id}`, {
+        fetch(`https://assignment11-library-management-server.vercel.app/borrow/${book._id}`, {
             method: "POST",
             headers: {
                 "content-type": "application/json"

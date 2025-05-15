@@ -9,7 +9,7 @@ const AvialableHotBooks = () => {
   const [hotBooks, setHotBooks] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/books/latest')
+    fetch('https://assignment11-library-management-server.vercel.app/books/latest')
       .then(res => res.json())
       .then(data => {
         setHotBooks(data);
